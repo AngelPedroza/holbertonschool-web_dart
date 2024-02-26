@@ -1,4 +1,4 @@
-int getPoint(Map<String, int> team) {
+int getPoints(Map<String, int> team) {
   int points = 0;
 
   team.forEach((key, value) {
@@ -15,14 +15,15 @@ int getPoint(Map<String, int> team) {
 }
 
 int whoWins(Map<String, int> teamA, Map<String, int> teamB) {
-  num pointsA = getPoint(teamA);
-  num pointsB = getPoint(teamB);
+  int pointsA = getPoints(teamA);
+  int pointsB = getPoints(teamB);
+  int result = 0;
 
   if (pointsA > pointsB)
-    return 1;
+    result = 1;
 
   else if (pointsA < pointsB)
-    return 2;
+    result = 2;
 
-  return 0;
+  return result;
 }
