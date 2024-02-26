@@ -6,5 +6,5 @@ int fact(int f) {
     return 1;
 
   else
-    return f * fact(f - 1);;
+    return f * fact(f - 1);
 }
