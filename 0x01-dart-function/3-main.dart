@@ -5,3 +5,4 @@ void main() {
   print(fact(1));
   print(fact(5));
 }
+
